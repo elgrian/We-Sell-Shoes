@@ -75,7 +75,7 @@ HERO
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: centers;
   align-items: center;
   color: purple;
   font-family: 'Roboto', sans-serif;
@@ -204,4 +204,27 @@ subscribe
 
 .email-sub:hover {
     transform: scale(1.05);
+}
+
+/*******************
+gallery
+*******************/
+
+.gallery-sec {
+    margin-right: .3rem;
+    height: 130vh;
+    background: #ecf0f1;
+    height: 130vh;
+    width: 100%;
+    padding: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gallery {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-gap: 10px;
+    perspective: 800px;
 }
