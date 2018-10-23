@@ -1,0 +1,45 @@
+/**********
+testimonial section
+***********/
+
+//three dots
+const nextNext = document.getEkenebtById('next-next');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
+
+//individual testimonials
+cost testi1 = document.querySelector('.testi1');
+const testi2 = document.querySelector('.testi2');
+cost testi3 = document.querySelector('.testi3');
+
+//testimonial parent container
+cost tests = document.querySelector('.tests');
+
+let nextNextInt = window.setInterval(function() {
+    //check and remove second class 
+    if (tests.classList.contains('second')) {
+        tests.classList.remove('second');
+        
+        //add the class which shows the third testimonialstests.classList.add('third');
+    }
+}, 4000)
+
+let nextint = window.setInterval(function() {
+    //check for and remove first class 
+    if (tests.classList.contains('first')) {
+        tests.classList.remove('first');
+        
+        //add the class that shows the second testimonial
+        tests.classList.add('second');
+    }
+}, 8000)
+
+let prevint = window.setInterval(function() {
+    //check for and remove third class
+    if (tests.classList.contains('third')) {
+        tests.classList.remove('third');
+        
+        //add the class that has the first testimonial
+        tests.classList.add('first');
+    }
+}, 16000)
