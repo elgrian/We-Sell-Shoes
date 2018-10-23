@@ -1,3 +1,7 @@
+body {
+  /*margin: 0;*/
+}
+
 /********
 NAVBAR
 ********/
@@ -13,8 +17,8 @@ NAVBAR
     background: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-flex-start;;
-    align-items:  center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-btn {
@@ -25,7 +29,7 @@ NAVBAR
     transition: all 200ms;
 }
 
-.nav-btn: hover {
+.nav-btn:hover {
     transform: scale(1.1);
 }
 
@@ -33,7 +37,7 @@ NAVBAR
     transition: all 300ms;
 }
 
-.nav-btn.logo: hover {
+.nav-btn.logo:hover {
     transform: scale(1.1) rotate(5deg) translateX(10px);
 }
 
@@ -42,10 +46,18 @@ NAVBAR
     transition: all 300ms;
 }
 
-.nav-btn.right: hover {
+.nav-btn.right:hover {
     transform: scale(1.1) rotate(3deg);
 }
 
-body {
-  /*margin: 0;*/
+/****************
+HERO
+****************/
+
+.hero {
+height: calc(99vh - 50px);
+width: 100%;
+background: linear-gradient(rgba(44, 62, 80,..3), rgba(44, 62, 80,..3)), url("https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+background-size: : cover;
+background-repeat: no-repeat;
 }
