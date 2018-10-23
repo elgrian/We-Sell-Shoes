@@ -75,7 +75,7 @@ HERO
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: centers;
+  justify-content: center;
   align-items: center;
   color: purple;
   font-family: 'Roboto', sans-serif;
@@ -251,8 +251,8 @@ gallery
     box-shadow: 1px 2px 6px rgba(0,0,0,.3);
     transition: all 300ms;
     transform-style: preserve-3d;
-    background-size: center;
-    background-position: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .panel:hover {
@@ -355,4 +355,22 @@ gallery
     .gallery > * {
         margin: 0;
     }
+}
+
+/****************
+subscribe 2
+****************/
+
+.subscribe-2 {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/450059/pexels-photo-450059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
