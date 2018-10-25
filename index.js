@@ -57,21 +57,21 @@ function dotClick(oldClassOne, oldClassTwo, newClass) {
     window.clearInterval(nextint);
     window.clearInterval(prevint);
     tests.classList.add(newClass);
+
+    nextNext.addEventListener("click", function() {
+        dotClick('second', 'first', 'third');
+        
+    })
+
+    next.addEvenListener("click", function() {
+        dotClick('first', 'third', 'second');
+        
+    })
+
+    prev.addEventListener("click", function() {
+        dotClick('second', 'third', 'first');
+        
+    })
 }
-
-nextNext.addEventListener("click", function() {
-    dotClick('second', 'first', 'third');
-    
-})
-
-next.addEvenListener("click", function() {
-    dotClick('first', 'third', 'second');
-    
-})
-
-prev.addEventListener("click", function() {
-    dotClick('second', 'third', 'first');
-    
-})
-
-// End of testimonial section
+// GET HELP HERE -----**************************------
+// End of testimonial section 
