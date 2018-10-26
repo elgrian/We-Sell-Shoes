@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 /*******
 NAVBAR
@@ -64,7 +63,7 @@ HERO
 .hero {
   height: calc(99vh - 50px);
   width: 100%;
-  background: linear-gradient(rgba(44, 62, 80,.6), rgba(44, 62, 80,.6)), url('http://www.zoomshoes.co.in/images/top-banner/about-usBanner.jpg');
+  background: linear-gradient(21deg, rgba(44, 62, 80, 0.6), rgba(152, 115, 140, 0.08) 0%, rgba(121, 98, 121, 0.2235294117647059) 58.82%, rgba(44, 62, 80, 0.6)), url('http://www.smilebaba.net/wp-content/uploads/2018/06/formal-shoes-banner-1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,26 +71,22 @@ HERO
 
 .hero-overlay-text {
   z-index: 5;
-  height: calc(100vh - 50px);
+  height: calc(10vh - 50px);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
 }
 
 .hero-overlay-text h1 {
-  margin-top: -90rem;
-  margin-right:  0rem;
+  margin-top: -70rem;
   font-size: 10rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: white;
-  text-shadow: 0 0 5px black, 0 0 05px gray, 0 0 10px darkgray, 0 0 15px darkgray, 0 0 20px darkgray, 0 0 35px darkgray, 0 0 45px darkgray;
 }
-
 
 .call-to-action-btn {
   background-color: rgba(253, 253, 253, 1);
@@ -107,9 +102,8 @@ HERO
 }
 
 .call-to-action-btn:hover {
-  /*transform: scale(1.02);*/
+  transform: scale(1.02);*/
   box-shadow: 0 2px 1px rgba(0,0,0,.3);
-  box-shadow: -3px -1px 18px rgba(35, 173, 278, 1);
 }
 
 /**********
@@ -311,7 +305,7 @@ gallery
 .c {
     background: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: -70px;
-    background-size: cover;
+    background-size: cover
 }
 
 .d {
@@ -321,14 +315,14 @@ gallery
 
 .e {
     background: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;  
+    background-size: cover;
 }
 
 .f {
     background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: -40px;
+    background-size: cover;
+    background-position: -27px;
 }
 
 .g {
@@ -339,18 +333,19 @@ gallery
 
 .h {
     background: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;  
+    background-size: cover;
 }
 
 .i {
     background: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;  
+    background-size: cover;
 }
 
 .j {
     background: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-position: 0px -60px;
-    background-size: cover;
+    background-position: 0px 0px;
+    background-size: cover
+    /* background-repeat: no-repeat; */
 }
 
 .panel div {
@@ -395,7 +390,7 @@ testimonials
 }
 
 .testi-title {
-    padding-top:1rem
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -411,7 +406,7 @@ testimonials
 }
 
 .tests.second {
-    right: -100;
+    right: -100%
 }
 
 .tests.third {
@@ -432,7 +427,7 @@ testimonials
 }
 
 .test2 {
-    position: absolute;;
+    position: absolute;
     left: 33%;
 }
 
@@ -466,7 +461,6 @@ testimonials
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -481,4 +475,3 @@ testimonials
 .dot:hover {
     background: black;
 }
-
