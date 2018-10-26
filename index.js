@@ -44,35 +44,34 @@ let prevint = window.setInterval(function() {
 }, 16000
 
 //create a reusable function for clicking on testimonial dots. 
-function dotClick(oldClassOne, oldClassTwo, newClass) {
-    if (tests.classList.contains(oldClassOne)) {
-        tests.classList.remove(oldClassOne);
-    }
-    
-    if (tests.classList.contains(oldClassTwo)) {
-    tests.classList.remove(oldClassTwo)
-    }
-    
-window.clearInterval(nextNextInt);
-window.clearInterval(nextint);
-window.clearInterval(prevint);
-tests.classList.add(newClass);
-}
-
-nextNext.addEventListener("click", function() {
-        dotClick('second', 'first', 'third');
-        
-})
-
-next.addEvenListener("click", function() {
-        dotClick('first', 'third', 'second');
-        
-})
-
-prev.addEventListener("click", function() {
-        dotClick('second', 'third', 'first');
-        
-})
+// function dotClick(oldClassOne, oldClassTwo, newClass) {
+//     if (tests.classList.contains(oldClassOne)) {
+//         tests.classList.remove(oldClassOne);
+//     }
+// 
+//     if (tests.classList.contains(oldClassTwo)) {
+//         tests.classList.remove(oldClassTwo)
+//     }
+//     window.clearInterval(nextNextInt);
+//     window.clearInterval(nextint);
+//     window.clearInterval(prevint);
+//     tests.classList.add(newClass);
+// }
+// 
+// nextNext.addEventListener("click", function() {
+//     dotClick('second', 'first', 'third');
+// 
+// })
+// 
+// next.addEvenListener("click", function() {
+//     dotClick('first', 'third', 'second');
+// 
+// })
+// 
+// prev.addEventListener("click", function() {
+//     dotClick('second', 'third', 'first');
+// 
+// })
 
 // GET HELP HERE -----**************************------
 // End of testimonial section 

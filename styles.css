@@ -89,7 +89,7 @@ HERO
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: white;
-  text-shadow: 0 0 5px black, 0 0 10px gray, 0 0 20px darkgray, 0 0 30px darkgray, 0 0 40px darkgray, 0 0 55px darkgray, 0 0 75px darkgray;
+  text-shadow: 0 0 5px black, 0 0 05px gray, 0 0 10px darkgray, 0 0 15px darkgray, 0 0 20px darkgray, 0 0 35px darkgray, 0 0 45px darkgray;
 }
 
 
