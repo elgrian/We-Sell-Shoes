@@ -1,16 +1,17 @@
-/**********
+
+/*************
 testimonial section
-***********/
+**************/
 
 //three dots
-const nextNext = document.getEkenebtById('next-next');
+const nextNext = document.getElementById('next-next')
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
 
 //individual testimonials
-const testi1 = document.querySelector('.testi1');
-const testi2 = document.querySelector('.testi2');
-const testi3 = document.querySelector('.testi3');
+const testi-1 = document.querySelector('.testi-1');
+const testi-2 = document.querySelector('.testi-2');
+const testi-3 = document.querySelector('.testi-3')
 
 //testimonial parent container
 const tests = document.querySelector('.tests');
@@ -44,34 +45,63 @@ let prevint = window.setInterval(function() {
 }, 16000
 
 //create a reusable function for clicking on testimonial dots. 
-// function dotClick(oldClassOne, oldClassTwo, newClass) {
-//     if (tests.classList.contains(oldClassOne)) {
-//         tests.classList.remove(oldClassOne);
-//     }
-// 
-//     if (tests.classList.contains(oldClassTwo)) {
-//         tests.classList.remove(oldClassTwo)
-//     }
-//     window.clearInterval(nextNextInt);
-//     window.clearInterval(nextint);
-//     window.clearInterval(prevint);
-//     tests.classList.add(newClass);
-// }
-// 
-// nextNext.addEventListener("click", function() {
-//     dotClick('second', 'first', 'third');
-// 
-// })
-// 
-// next.addEvenListener("click", function() {
-//     dotClick('first', 'third', 'second');
-// 
-// })
-// 
-// prev.addEventListener("click", function() {
-//     dotClick('second', 'third', 'first');
-// 
-// })
+function dotClick(oldClassOne, oldClassTwo, newClass) {
+    if (tests.classList.contains(oldClassOne)) {
+        tests.classList.remove(oldClassOne);
+    }
+
+    if (tests.classList.contains(oldClassTwo)) {
+        tests.classList.remove(oldClassTwo)
+    }
+    window.clearInterval(nextNextInt);
+    window.clearInterval(nextint);
+    window.clearInterval(prevint);
+    tests.classList.add(newClass);
+}
+
+nextNext.addEventListener("click", function() {
+    dotClick('second', 'first', 'third');
+
+})
+
+next.addEvenListener("click", function() {
+    dotClick('first', 'third', 'second');
+
+})
+
+prev.addEventListener("click", function() {
+    dotClick('second', 'third', 'first');
+
+})
 
 // GET HELP HERE -----**************************------
 // End of testimonial section 
+
+/////////////FAQ accordion section///////////////
+
+
+//declare default vars
+const acc = documents.getElementsByClassName("accordion");
+//loop through all accordion buttons
+for (let i = 0; i < acc.length; i++) {
+    //trigger an event after clicked
+    acc[i].addEventListener("click", function() {
+        //add in the active class
+        this.classList.toggle("active"); 
+        //select sibling element
+        let panel = this.nextElementSibling;
+        //if sibling is open, close it, if closed, open setInterval(function () {
+        
+        if (panel.style.maxHeight) {
+            //panel is open
+            panel.style.maxHeight = null;
+        } else {
+            //panel is closed
+            panel.style.maxHeight = panel.scrollHeight = "px";
+            
+        }    
+            
+    });
+}
+
+

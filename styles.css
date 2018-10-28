@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 /*******
 NAVBAR
@@ -421,17 +422,17 @@ testimonials
     width: 100%;
 }
 
-.test1 {
+.testi-1 {
     position: absolute;
     left: 0;
 }
 
-.test2 {
+.testi-2 {
     position: absolute;
     left: 33%;
 }
 
-.test3 {
+.testi-3 {
     position: absolute;
     left: 66%;
 }
@@ -460,7 +461,8 @@ testimonials
     margin-top: 28rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: right;
+    justify-content: center;
     width: 100%;
 }
 
@@ -474,4 +476,79 @@ testimonials
 
 .dot:hover {
     background: black;
+}
+
+/****************
+subscribe 3
+****************/
+.subscribe-3 {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/**********
+faqpanel
+************/
+.faq {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq-container: {
+    width: 60%
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, accordion:hover{
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faqpanel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content:'\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2796";/* Unicode character for "minus" sign (-) */
 }
