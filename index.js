@@ -1,3 +1,29 @@
+/////////popup///////
+
+const popUp = document.getElementById('pop-up');
+const popUpLayer = document.getElementById('pop-up-layer');
+const closeModal = document.getElementById('close-pop-up');
+
+//nav-bar button
+const subBtn = document.getElementById('sub-btn');
+subBtn.addEvenListener("click", () => {
+    popUpLayer.style.display = 'flex';
+})
+
+//close model click makes the popup go away
+closeModal.addEvenListener("click", function() {
+    popUpLayer.style.display = 'none';
+})
+
+let popUpSeconds = 40;
+
+//trigger popup after the secodns variable
+let popUpFun = window.setInterval(function() {
+    popUpLayer.style.display = 'flex';
+    
+    window.clearInterval(popUpFun)
+
+}, popUpSeconds * 1000);
 
 /*************
 testimonial section
@@ -104,4 +130,71 @@ for (let i = 0; i < acc.length; i++) {
     });
 }
 
+/**************
+Footer
+**************/
+
+.footer {
+    height: 30vh;
+    margin: 0;
+    background: #34495e;
+    color: white;
+    display: flex;
+    justify-context: center;
+    align-items: center;
+    font-family: roboto;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cta p {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.footer-copyright {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.more-links {
+    curor: pointer;
+}
 
